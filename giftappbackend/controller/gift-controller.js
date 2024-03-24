@@ -81,8 +81,6 @@ export const getGiftRecsById = async (req, res, next) => {
     model: "gpt-3.5-turbo",
   });
 
-  console.log(completion.choices[0]);
-
   response = JSON.parse(completion.choices[0].message.content);
   const giftsArray = response.gifts;
   const payLoad = giftsArray.map((g) => {

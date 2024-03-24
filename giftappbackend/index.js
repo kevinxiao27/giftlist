@@ -13,8 +13,8 @@ app.use(cors());
 
 mongoose.connect(`${process.env.MONGODB_URI}`).catch((e) => console.log(e));
 
-app.listen(8080, async () => {
-  console.log("Connected to MongoDB and running at http://localhost:8080");
+app.listen(3000, async () => {
+  console.log("Connected to MongoDB and running at http://localhost:3000");
 });
 
 export default app;
