@@ -1,7 +1,3 @@
-import dotenv from "dotenv";
-
-dotenv.config("./.env");
-
 export const searchImages = async (query) => {
   try {
     const response = await fetch(
