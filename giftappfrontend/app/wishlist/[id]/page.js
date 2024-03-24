@@ -52,7 +52,7 @@ const Page = () => {
     <>
       <div className="bg-light-background">
         <Navbar />
-        <div className="absolute top-[25vh] left-[18vw]">
+        <div className="absolute top-[25vh] left-[22vw]">
           {isBusy ? (
             <div className="text-[#50006c]">Loading ...</div>
           ) : (
