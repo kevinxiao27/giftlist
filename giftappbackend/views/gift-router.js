@@ -13,7 +13,7 @@ import { validateResults } from "../middlewares/Validation.js";
 const giftRouter = express();
 giftRouter.get("/", getAllGifts);
 giftRouter.get(
-  "gift/:id",
+  "/gift/:id",
   [param("id").exists().not().isEmpty(), validateResults],
   getGiftById
 );
