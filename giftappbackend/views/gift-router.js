@@ -4,6 +4,7 @@ import {
   deleteGiftById,
   getAllGifts,
   getGiftById,
+  getGiftRecsById,
   updateGift,
 } from "../controller/gift-controller.js";
 import { check, param } from "express-validator";
@@ -12,9 +13,14 @@ import { validateResults } from "../middlewares/Validation.js";
 const giftRouter = express();
 giftRouter.get("/", getAllGifts);
 giftRouter.get(
-  "/:id",
+  "gift/:id",
   [param("id").exists().not().isEmpty(), validateResults],
   getGiftById
+);
+giftRouter.get(
+  "/recommend/:id",
+  [param("id").exists().not().isEmpty(), validateResults],
+  getGiftRecsById
 );
 giftRouter.post(
   "/",
