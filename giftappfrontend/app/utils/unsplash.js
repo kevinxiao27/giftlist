@@ -1,7 +1,7 @@
 export const searchImages = async (query) => {
   try {
     const response = await fetch(
-      `/unsplash/search/photos?query=${query}&client_id=9hM1ygY7aW9FGo4HsaFF9A3Iz8SqPodJAf8j3tcGV1s`
+      `/unsplash/search/photos?query=${query}&client_id=${process.env.UNSPLASH_API_KEY}`
     );
     const data = await response.json();
     const imageUrls = data.results
