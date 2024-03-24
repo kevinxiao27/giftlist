@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ["images.unsplash.com"],
+    domains: ["images.unsplash.com", "buffer.com"],
   },
   env: {
     UNSPLASH_API_KEY: process.env.UNSPLASH_API_KEY,
