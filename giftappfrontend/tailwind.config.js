@@ -15,7 +15,7 @@ module.exports = {
       colors: {
         "bubble-gum": "#e42d55",
         "light-background": "#fce4ea",
-        "dark-purple": "#50006c",
+        "darkish-purple": "#50006c",
       },
     },
   },
