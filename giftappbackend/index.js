@@ -14,3 +14,5 @@ mongoose.connect(`${process.env.MONGODB_URI}`).catch((e) => console.log(e));
 app.listen(8080, async () => {
   console.log("Connected to MongoDB and running at http://localhost:8080");
 });
+
+export default app;
