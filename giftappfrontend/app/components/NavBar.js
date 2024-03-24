@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <nav className="w-full bg-pink-500">
+    <nav className="w-full bg-bubble-gum">
       <ul className="flex flex-row justify-between py-4">
         <li className="py-3 px-5">
           <Link
@@ -17,7 +17,7 @@ const Navbar = () => {
             <Link className="py-3 px-2 text-white" href="/">
               Home
             </Link>
-            <Link className="py-3 px-2 text-white" href="/friendlist">
+            <Link className="py-3 px-2 text-white" href="/wishlist">
               WishList
             </Link>
           </div>

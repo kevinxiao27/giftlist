@@ -12,3 +12,9 @@
     text-wrap: balance;
   }
 }
+
+@layer base {
+  html {
+      @apply bg-light-background;
+  }
+}
